@@ -4,5 +4,5 @@ title: About
 permalink: /about/
 ---
 
-# About Me
+# I'm Nick! I like math and data.
 
