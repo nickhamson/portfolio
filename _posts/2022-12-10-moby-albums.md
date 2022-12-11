@@ -7,33 +7,28 @@ description: Analyzing Moby's evolving artistic style
 image: /assets/images/mobyhand.jpg
 ---
 
-Intro paragraph
+When writing the history of electronic music in the 90's and early 2000's, it's impossible to ignore Moby's impact on the emerging genre. Over the last thirty years, his music has evolved as well. I want to chart these changes and visualize them over the course of Moby's career.
 
 &nbsp;
-# Data Collection with Spotipy
-
-
-
-
-
-[Spotipy](https://spotipy.readthedocs.io/en/master/#) is a simple Python library for interacting with the Spotify Web API. It was easy to install and use once I got my authentication keys set up. I won't write a whole tutorial, but [here are the basic steps](https://github.com/nickhamson/web_scraping) I took to get my data:
-1. Register an app on the [Spotify Developer Dashboard](https://developer.spotify.com/dashboard/applications)
-2. Use the Client ID and Client Secret Key they gave me to instantiate an authenticated Spotify object
-3. Use Moby's Spotify URI to request his album information
-4. Pull track IDs from each album, and then pass those IDs into the audio_features function
-5. Compile that list into a useful pandas DataFrame and csv file
+# Data Collection with Spotipy and Data Cleaning
+I started by using the Spotipy Python library to interface with the Spotify Web API. After setting up an an app on the Spotify Developer Dashboard, I was able to collect a list of Moby's albums, his songs, and metrics for a plethora of different audio features. This produced a list of around fifty albums and over seven hundred songs. Once I started looking through my data, however, I realized that a lot of the albums were duplicates of each other. I filtered out the duplicates and was left with thirty-three albums and just over five hundred songs, each of which had a large number of audio features: energy, danceability, loudness, key, tempo, length, and others.
 
 &nbsp;
-# Ethics
-Spotipy is an established library that was suggested on Spotify's list of packages that utilize their API. I read through the [Spotify Developer Terms of Service](https://developer.spotify.com/terms/) and the simple data-fetching I'm doing here is compliant with their terms.
+# Data Exploration and Visualization
+As I reviewed the data I was left with, I discovered a couple trends to focus on. I realized I could group Moby's albums into three categories: mainline studio albums, remix albums with Moby's songs rearranged by other artists, and ambient music albums. I explored a few different audio features, but danceability showed the clearest trends from album to album. I used the ggplot2 package in R to create a sequential collection of boxplots, each one plotting the danceability of the songs in one of Moby's albums. According the the Spotify API, "danceability describes how suitable a track is for dancing based on a combination of musical elements including tempo, rhythm stability, beat strength, and overall regularity. A value of 0.0 is least danceable and 1.0 is most danceable." 
+It was interesting to see measurable patterns in music I've loved listening to for years, and I noticed one in particular that I marked specifically on my graphic.
+
+![Plot](https://raw.githubusercontent.com/nickhamson/stat386-projects/main/assets/images/plot.png)
 
 &nbsp;
-# Take a look for yourself!
-
-[Here is a link](https://github.com/nickhamson/web_scraping) to my repository and the code I used. If you want to run this code yourself, you'll need to get your own API key from the Spotify Dev site. My dataset has a lot of interesting info I'm excited to look at! Spotify has analytic data on metrics like danceability, instrumentalness, acousticness, and energy. I'm planning on seeing how these attributes have changed over time in Moby's music, and hopefully I can see some cool trends in some of my favorite music!
+# Heavy Beats, Heavy Living
+The patterns in how danceable Moby's songs are coincide with other facets of his life and career, most notably his move to sobriety in 2008. It's easy to see the pattern before this point: Moby got his start creating heavy-hitting rave music, and his aggresive beats stayed bangin' until his drug and alcohol use hit a breaking point. After that point, the division between the different categories of album is what defines Moby's music. His studio albums are more mellow than his earlier career, and his ambient music is even more ponderous and atmospheric. Predictably, the remixed versions of Moby's albums are almost all more danceable than their studio counterparts. In general, his music has evolved to encompass a diverse array of sounds and genres.
 
 &nbsp;
-Let me know in the comments what patterns you think I should look for in my analysis!
+
+[Here is a link](https://github.com/nickhamson/web_scraping) to my code and data if you want to explore the Spotipy library or ggplot! If you want to run this code yourself, you'll need to get your own API key from the Spotify Dev site. Take a look at my previous post for more info about my process. Leave me any comments you have, and I hope you've enjoyed this dive into my favorite musician!
+
+
 
 
 
