@@ -1,16 +1,21 @@
 ---
 layout: post
-title:  "Extreme APIs: Spotify in Python"
-date:   2022-10-25
+title:  "Three Decades of Moby: Raves, Remixes, and Ambient Vibes"
+date:   2022-12-10
 author: Nick Hamson
-description: Using the Spotipy library and the Spotify Web API to gather audio data about Moby's discography
-image: /assets/images/moby-wide.jpg
+description: Analyzing Moby's evolving artistic style
+image: /assets/images/mobyhand.jpg
 ---
 
 Intro paragraph
 
 &nbsp;
-# The Spotify Web API and Spotipy
+# Data Collection with Spotipy
+
+
+
+
+
 [Spotipy](https://spotipy.readthedocs.io/en/master/#) is a simple Python library for interacting with the Spotify Web API. It was easy to install and use once I got my authentication keys set up. I won't write a whole tutorial, but [here are the basic steps](https://github.com/nickhamson/web_scraping) I took to get my data:
 1. Register an app on the [Spotify Developer Dashboard](https://developer.spotify.com/dashboard/applications)
 2. Use the Client ID and Client Secret Key they gave me to instantiate an authenticated Spotify object
