@@ -4,5 +4,5 @@ title: About
 permalink: /about/
 ---
 
-# I'm Nick! I'm a senior at Brigham Young University graduating in Statistics - Data Science. I'm experienced with C++, Java, Python, and R, and I love using computer to learn more about data.
+# I'm Nick Hamson! I'm a Brigham Young University graduate in Statistics - Data Science. I'm experienced with Python, R, C++, and Java, and I love using computers to learn more about data.
 
