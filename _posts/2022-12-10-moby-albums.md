@@ -18,7 +18,7 @@ I started by using the Spotipy Python library to interface with the Spotify Web 
 As I reviewed the data I was left with, I discovered a couple trends to focus on. I realized I could group Moby's albums into three categories: mainline studio albums, remix albums with Moby's songs rearranged by other artists, and ambient music albums. I explored a few different audio features, but danceability showed the clearest trends from album to album. I used the ggplot2 package in R to create a sequential collection of boxplots, each one plotting the danceability of the songs in one of Moby's albums. According the the Spotify API, "danceability describes how suitable a track is for dancing based on a combination of musical elements including tempo, rhythm stability, beat strength, and overall regularity. A value of 0.0 is least danceable and 1.0 is most danceable." 
 It was interesting to see measurable patterns in music I've loved listening to for years, and I noticed one in particular that I marked specifically on my graphic.
 
-![Plot](https://raw.githubusercontent.com/nickhamson/stat386-projects/main/assets/images/plot.png)
+![Plot](https://raw.githubusercontent.com/nickhamson/portfolio/main/assets/images/plot.png)
 
 &nbsp;
 # Heavy Beats, Heavy Living
