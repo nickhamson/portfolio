@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Three Decades of Moby: Raves, Remixes, and Ambient Vibes"
+title:  "Three Decades of Moby Data: Raves, Remixes, and Ambient Vibes"
 date:   2022-12-10
 author: Nick Hamson
 description: Analyzing Moby's evolving artistic style
